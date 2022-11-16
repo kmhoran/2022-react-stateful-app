@@ -1,0 +1,61 @@
+$text-color: #000;
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    cursor: pointer;
+  }
+  .simpleForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    input[type="text"] {
+      font-size: 1.3em;
+    }
+    input[type="submit"] {
+      margin-top: 5px;
+      font-size: 0.9em;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+  .categoryList {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .categoryCard {
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ddf;
+    margin: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #aaf;
+    }
+  }
+  .itemCard {
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ddf;
+    margin: 5px;
+    &.itemComplete {
+      background-color: #ccc;
+      border: 2px solid #888;
+    }
+  }
+  a:link {
+    text-decoration: none;
+    color: $text-color;
+  }
+  a:visited {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
